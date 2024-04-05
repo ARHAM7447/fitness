@@ -1,0 +1,266 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #E8733C;
+    padding: 20px;
+    
+    
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #E8733C;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Main Content */
+
+#hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#hero h2 {
+    font-size: 36px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #E8733C;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Header Button Styles */
+
+.header-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: #e04e42;
+}
+
+/* Beautiful Button Styles */
+
+.beautiful-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.beautiful-btn:hover {
+    background-color: #45a049;
+}
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 50px;
+}
+ /* Styling for the powered by text */
+ footer p {
+    margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+/* Styling for the list */
+footer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for list items */
+footer li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 10px; /* Add some space between list items */
+}
+
+/* Styling for links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust as needed */
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  #hero {
+    text-align: center;
+  }
+  
+  #hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #features ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  #features li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  #testimonials ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  #testimonials li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  footer p, footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
