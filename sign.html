@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="sign.css">
 </head>
 <body>
 
@@ -21,8 +21,8 @@
             <a href="home.html" class="header-btn">Home</a>
             <a href="work.html" class="header-btn">workouts</a>
             <a href="medi.html" class="header-btn">meditation</a>
-            <a href="about.html" class="header-btn">about-us</a>
-            <a href="contact.html" class="header-btn">contact-us</a>
+            <a href="sign.html" class="header-btn">sign-up</a>
+            <a href="login.html" class="header-btn">login</a>
         </ul>
     </div>
 </nav>
@@ -30,10 +30,24 @@
 <main>
     <div class="container">
         <section id="hero">
-           
+            
             
         </section>
-
+<div class="container">
+    <h2>Sign Up</h2>
+    <form class="signup-form" action="#" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
         
         </section>
     </div>
@@ -64,7 +78,7 @@
     <div class="footer-content">
     </div>
     <div class="container">
-       
+      
     </div>
     <div class="container">
         <p>&copy; 2024 Fitness Website. All rights reserved.</p>

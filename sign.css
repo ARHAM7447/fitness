@@ -26,9 +26,7 @@ ul {
 
 header {
     background-color: #E8733C;
-    padding: 20px;
-    
-    
+    padding: 20px 0;
 }
 
 header h1 {
@@ -263,4 +261,66 @@ footer a {
       margin-bottom: 10px;
     }
   }
-  
+  /* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+/* Logo Styles */
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 2000px; /* Adjust the margin as needed */
+}
+

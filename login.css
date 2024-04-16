@@ -4,67 +4,67 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.container {
+  }
+  
+  .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: #333;
-}
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
     padding: 0;
-}
-
-/* Header */
-
-header {
+  }
+  
+  /* Header */
+  
+  header {
     background-color: #E8733C;
     padding: 20px 0;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     text-align: center;
     margin: 0;
-}
-
-/* Navigation */
-
-nav {
+  }
+  
+  /* Navigation */
+  
+  nav {
     background-color: #E8733C;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     text-align: center;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin: 0 10px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #fff;
-}
-
-/* Main Content */
-
-#hero {
+  }
+  
+  /* Main Content */
+  
+  #hero {
     text-align: center;
     margin-top: 50px;
-}
-
-#hero h2 {
+  }
+  
+  #hero h2 {
     font-size: 36px;
-}
-
-.btn {
+  }
+  
+  .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -73,19 +73,19 @@ nav ul li a {
     border-radius: 5px;
     margin-top: 20px;
     text-decoration: none;
-}
-
-/* Footer */
-
-footer {
+  }
+  
+  /* Footer */
+  
+  footer {
     background-color: #E8733C;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-/* Header Button Styles */
-
-.header-btn {
+  }
+  /* Header Button Styles */
+  
+  .header-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff6f61;
@@ -95,15 +95,15 @@ footer {
     margin-left: 20px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
-
-.header-btn:hover {
+  }
+  
+  .header-btn:hover {
     background-color: #e04e42;
-}
-
-/* Beautiful Button Styles */
-
-.beautiful-btn {
+  }
+  
+  /* Beautiful Button Styles */
+  
+  .beautiful-btn {
     display: inline-block;
     padding: 12px 24px;
     background-color: #4CAF50;
@@ -116,40 +116,40 @@ footer {
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.beautiful-btn:hover {
+  }
+  
+  .beautiful-btn:hover {
     background-color: #45a049;
-}
-.logo {
+  }
+  .logo {
     width: 50px; /* Adjust the width as needed */
     margin-right: 50px;
-}
- /* Styling for the powered by text */
- footer p {
+  }
+  /* Styling for the powered by text */
+  footer p {
     margin-bottom: 10px; /* Add some space below the paragraph */
-}
-
-/* Styling for the list */
-footer ul {
+  }
+  
+  /* Styling for the list */
+  footer ul {
     list-style: none; /* Remove bullet points */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
-}
-
-/* Styling for list items */
-footer li {
+  }
+  
+  /* Styling for list items */
+  footer li {
     display: inline-block; /* Display list items horizontally */
     margin-right: 10px; /* Add some space between list items */
-}
-
-/* Styling for links */
-footer a {
+  }
+  
+  /* Styling for links */
+  footer a {
     color: #fff;
     text-decoration: none;
-}
-/* Resetting default margin and padding */
-* {
+  }
+  /* Resetting default margin and padding */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -261,4 +261,68 @@ footer a {
       margin-bottom: 10px;
     }
   }
+  /* Resetting default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Resetting default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .login-label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-submit:hover {
+    background-color: #555;
+  }
+  
   
