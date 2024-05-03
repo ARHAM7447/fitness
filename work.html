@@ -27,15 +27,140 @@
     </div>
 </nav>
 
-<main>
-    <div class="container">
-        <section id="hero">
-            
+<body>
+    //workout//
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Body Workout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Full Body Workout</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#chest">Chest</a></li>
+            <li><a href="#back">Back</a></li>
+            <li><a href="#legs">Legs</a></li>
+            <li><a href="#arms">Arms</a></li>
+            <li><a href="#abs">Abs</a></li>
+            <li><a href="#fullbody">Full Body</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="chest">
+            <h2>Chest Exercises</h2>
+            <p>1. Push-ups: Start in a plank position, lower your body until your chest almost touches the ground, then push back up.</p>
+            <form id="pushups-tracker">
+                <label for="pushups-sets">Sets: </label>
+                <input type="number" id="pushups-sets" name="pushups-sets" placeholder="Sets">
+                <label for="pushups-reps">Reps: </label>
+                <input type="number" id="pushups-reps" name="pushups-reps" placeholder="Reps">
+                <button type="submit">Track Push-ups</button>
+            </form>
+            <!-- Add forms for other chest exercises here -->
         </section>
+        <section id="back">
+            <h2>Back Exercises</h2>
+            <p>1. Pull-ups: Hang from a bar, then pull your body up until your chin reaches the bar.</p>
+            <form id="pullups-tracker">
+                <label for="pullups-sets">Sets: </label>
+                <input type="number" id="pullups-sets" name="pullups-sets" placeholder="Sets">
+                <label for="pullups-reps">Reps: </label>
+                <input type="number" id="pullups-reps" name="pullups-reps" placeholder="Reps">
+                <button type="submit">Track Pull-ups</button>
+            </form>
+            <!-- Add forms for other back exercises here -->
+        </section>
+        <section id="legs">
+            <h2>Leg Exercises</h2>
+            <p>1. Squats: Stand with feet shoulder-width apart, lower your body until your thighs are parallel to the ground, then stand back up.</p>
+            <form id="squats-tracker">
+                <label for="squats-sets">Sets: </label>
+                <input type="number" id="squats-sets" name="squats-sets" placeholder="Sets">
+                <label for="squats-reps">Reps: </label>
+                <input type="number" id="squats-reps" name="squats-reps" placeholder="Reps">
+                <button type="submit">Track Squats</button>
+            </form>
+            <!-- Add forms for other leg exercises here -->
+        </section>
+        <section id="arms">
+            <h2>Arm Exercises</h2>
+            <p>1. Bicep Curls: Hold dumbbells with palms facing forward, curl the weights towards your shoulders, then lower them back down.</p>
+            <form id="bicep-curls-tracker">
+                <label for="bicep-curls-sets">Sets: </label>
+                <input type="number" id="bicep-curls-sets" name="bicep-curls-sets" placeholder="Sets">
+                <label for="bicep-curls-reps">Reps: </label>
+                <input type="number" id="bicep-curls-reps" name="bicep-curls-reps" placeholder="Reps">
+                <button type="submit">Track Bicep Curls</button>
+            </form>
+            <!-- Add forms for other arm exercises here -->
+        </section>
+        <section id="abs">
+            <h2>Abdominal Exercises</h2>
+            <p>1. Crunches: Lie on your back, bend your knees, and lift your shoulders off the ground, then lower them back down.</p>
+            <form id="crunches-tracker">
+                <label for="crunches-sets">Sets: </label>
+                <input type="number" id="crunches-sets" name="crunches-sets" placeholder="Sets">
+                <label for="crunches-reps">Reps: </label>
+                <input type="number" id="crunches-reps" name="crunches-reps" placeholder="Reps">
+                <button type="submit">Track Crunches</button>
+            </form>
+            <!-- Add forms for other abdominal exercises here -->
+        </section>
+        <section id="fullbody">
+            <h2>Full Body Exercises</h2>
+            <p>1. Burpees: Start in a standing position, squat down, kick your feet back into a push-up position, do a push-up, then jump back to the squat position and jump up.</p>
+            <form id="burpees-tracker">
+                <label for="burpees-sets">Sets: </label>
+                <input type="number" id="burpees-sets" name="burpees-sets" placeholder="Sets">
+                <label for="burpees-reps">Reps: </label>
+                <input type="number" id="burpees-reps" name="burpees-reps" placeholder="Reps">
+                <button type="submit">Track Burpees</button>
+            </form>
+            <!-- Add forms for other full body exercises here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Full Body Workout</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Event listener for tracking push-ups
+            document.getElementById('pushups-tracker').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var sets = document.getElementById('pushups-sets').value;
+                var reps = document.getElementById('pushups-reps').value;
+                // You can process and store the workout data here
+                console.log('Push-ups: Sets - ' + sets + ', Reps - ' + reps);
+                // Clear the form after submission
+                this.reset();
+            });
 
-        
-        </section>
-    </div>
+            // Event listener for tracking pull-ups
+            document.getElementById('pullups-tracker').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var sets = document.getElementById('pullups-sets').value;
+                var reps = document.getElementById('pullups-reps').value;
+                // You can process and store the workout data here
+                console.log('Pull-ups: Sets - ' + sets + ', Reps - ' + reps);
+                // Clear the form after submission
+                this.reset();
+            });
+
+            // Add event listeners for other exercises
+            // You can copy and modify the above event listeners for other exercises as needed
+            // Remember to change the form IDs and console log messages accordingly
+        });
+    </script>
+</body>
+</html>
+//end//
+</body>
 </main>
 
 <footer>
