@@ -29,17 +29,167 @@
 
 <body>
     <section>
-
-
-
-
-        
-
-
-
-
-
-
+        <div class="container">
+            <h1>Full Body Workout</h1>
+            
+            <ul>
+              <li class="exercise">
+                <h2>Push-ups</h2>
+                <p>3 sets of 10 reps</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Squats</h2>
+                <p>3 sets of 12 reps</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Plank</h2>
+                <p>3 sets, hold for 30 seconds each</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Lunges</h2>
+                <p>3 sets of 10 reps each leg</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Leg Raises</h2>
+                <p>3 sets of 15 reps</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Bicep Curls</h2>
+                <p>3 sets of 12 reps each arm</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Tricep Dips</h2>
+                <p>3 sets of 10 reps</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Pull-ups</h2>
+                <p>3 sets of 5 reps (if you have access to a pull-up bar)</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Jumping Jacks</h2>
+                <p>3 sets of 30 seconds</p>
+                <p>Rest: 30 seconds between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>High Knees</h2>
+                <p>3 sets of 30 seconds</p>
+                <p>Rest: 30 seconds between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Mountain Climbers</h2>
+                <p>3 sets of 30 seconds</p>
+                <p>Rest: 30 seconds between sets</p>
+              </li>
+              <li class="exercise">
+                <h2>Bodyweight Squats</h2>
+                <p>3 sets of 15 reps</p>
+                <p>Rest: 1 minute between sets</p>
+              </li>
+              <!-- Add more exercises here -->
+            </ul>
+          </div>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Workout Timer</title>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              text-align: center;
+            }
+            #timer {
+              font-size: 24px;
+              margin-bottom: 20px;
+            }
+            #controls {
+              margin-top: 20px;
+            }
+            button {
+              padding: 10px 20px;
+              font-size: 16px;
+              margin: 0 10px;
+            }
+          </style>
+          </head>
+          <body>
+          
+          <div id="timer">00:00</div>
+          
+          <div id="controls">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+          </div>
+          
+          <script>
+            // Workout Timer
+            const workoutDuration = 60; // Duration of the workout in seconds
+            const restDuration = 30; // Duration of the rest in seconds
+            const totalRounds = 10; // Total number of workout/rest rounds
+          
+            let currentRound = 1;
+            let timeLeft = workoutDuration;
+            let isWorkoutPhase = true;
+            let timerInterval;
+          
+            const timerDisplay = document.getElementById('timer');
+            const startBtn = document.getElementById('startBtn');
+            const stopBtn = document.getElementById('stopBtn');
+          
+            function updateDisplay() {
+              const minutes = Math.floor(timeLeft / 60);
+              let seconds = timeLeft % 60;
+              seconds = seconds < 10 ? '0' + seconds : seconds;
+              timerDisplay.textContent = `${minutes}:${seconds}`;
+            }
+          
+            function switchPhase() {
+              isWorkoutPhase = !isWorkoutPhase;
+              timeLeft = isWorkoutPhase ? workoutDuration : restDuration;
+              if (isWorkoutPhase) {
+                currentRound++;
+              }
+            }
+          
+            function timerTick() {
+              if (currentRound <= totalRounds) {
+                if (timeLeft > 0) {
+                  updateDisplay();
+                  timeLeft--;
+                } else {
+                  switchPhase();
+                }
+              } else {
+                clearInterval(timerInterval);
+                timerDisplay.textContent = 'Workout Complete!';
+              }
+            }
+          
+            startBtn.addEventListener('click', function() {
+              if (!timerInterval) {
+                timerInterval = setInterval(timerTick, 1000);
+              }
+            });
+          
+            stopBtn.addEventListener('click', function() {
+              clearInterval(timerInterval);
+              timerInterval = null;
+            });
+          
+          </script>
+          
+          </body>
+          </html>
+          
 
 
 

@@ -122,8 +122,8 @@ footer {
   background-color: #45a049;
 }
 .logo {
-  width: 50px; /* Adjust the width as needed */
-  margin-right: 50px;
+  width: 20px; /* Adjust the width as needed */
+  margin-right: 20px;
 }
 /* Styling for the powered by text */
 footer p {
@@ -170,7 +170,7 @@ header {
 }
 
 .logo {
-  width: 100px; /* Adjust as needed */
+  width: 50px; /* Adjust as needed */
 }
 
 nav {
@@ -214,7 +214,7 @@ main {
 
 #features li {
   flex: 1;
-  text-align: center;
+  text-align: right;
 }
 
 #testimonials ul {
@@ -311,3 +311,68 @@ footer a:hover {
 color: #c3d40e;
 }
 
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.exercise {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.exercise:hover {
+  background-color: #eaeaea;
+}
+/* Basic styling for the workout list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.exercise {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Animation for hover effect */
+li.exercise:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(5, 90, 188, 0.1);
+}
+
+/* Responsive color styles */
+@media screen and (max-width: 600px) {
+  li.exercise {
+    background-color: #12a3e7;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  li.exercise {
+    background-color: #ea310c;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  li.exercise {
+    background-color: #f2f2f2;
+  }
+}
