@@ -376,3 +376,114 @@ li.exercise:hover {
     background-color: #f2f2f2;
   }
 }
+/* Base styles for the workout list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for each exercise item */
+li.exercise {
+  background-color: #2c62eb; /* Light grey background */
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out; /* Smooth transform transition */
+}
+
+/* Adding a colorful border to the left of each exercise item */
+li.exercise::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0ad9ef, #2160e9); /* Gradient color */
+  border-radius: 8px 0 0 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Styling for exercise titles */
+h2 {
+  color: #0e0101; /* Dark text color for better readability */
+  margin: 0 0 10px 0;
+}
+
+/* Styling for paragraphs (reps and rest info) */
+p {
+  color: #080101; /* Lighter text color */
+  margin: 0;
+}
+
+/* Hover effect for exercise items */
+li.exercise:hover {
+  transform: scale(1.05); /* Slightly enlarges the item */
+  background-color: #23cae4; /* Changes background color on hover */
+}
+
+/* Keyframes for a pulsing animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 26, 11, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(225, 134, 6, 0.917);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 165, 0, 0);
+  }
+}
+
+/* Applying the animation to exercise items on hover */
+li.exercise:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Additional exercises can be added here with similar styling */
+/* Timer and Control Buttons Styling */
+#timer {
+  font-size: 2em; /* Larger font size for better visibility */
+  color: #333; /* Dark grey color for the timer text */
+  text-align: center; /* Center the timer text */
+  margin: 20px 0; /* Spacing above and below the timer */
+  padding: 10px;
+  background-color: #e9e9e9; /* Light grey background for the timer */
+  border-radius: 5px; /* Rounded corners for the timer */
+  width: 150px; /* Fixed width for the timer */
+  margin-left: auto; /* Center the timer horizontally */
+  margin-right: auto;
+}
+
+/* Styling for the control buttons */
+#controls button {
+  background-color: #4CAF50; /* Green background for buttons */
+  color: white; /* White text color */
+  padding: 15px 32px; /* Padding inside the buttons */
+  text-align: center; /* Center the text inside the buttons */
+  text-decoration: none; /* Remove underline from the buttons */
+  display: inline-block; /* Allow buttons to sit side by side */
+  font-size: 16px; /* Set font size for button text */
+  margin: 4px 2px; /* Margin around the buttons */
+  cursor: pointer; /* Change mouse cursor to pointer when over the buttons */
+  border: none; /* Remove default border from buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for buttons */
+#controls button:hover {
+  background-color: #45a049; /* Darker shade of green on hover */
+}
+
+/* Adding a shadow to the buttons for a 3D effect */
+#controls button {
+  box-shadow: 0 9px #999;
+}
+
+/* Change button styling when being clicked */
+#controls button:active {
+  background-color: #3b1bf1;
+  box-shadow: 0 5px #0ec8ee;
+  transform: translateY(4px);
+}
