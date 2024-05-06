@@ -311,3 +311,48 @@ footer a:hover {
   color: #c3d40e;
 }
 
+/* Meditation Section styles */
+.meditation-section {
+  padding: 40px 0;
+}
+
+.meditation-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meditation-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.meditation-section p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.meditation-section ul,
+.meditation-section ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.meditation-section li {
+  margin-bottom: 5px;
+}
+
+.meditation-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.meditation-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.meditation-section ol {
+  margin-bottom: 20px;
+}

@@ -513,3 +513,20 @@ li.exercise:hover {
 .exercise p {
   margin: 5px 0;
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px; /* Adjust margin-top to center vertically */
+}
+#timer {
+  font-size: 48px; /* Increase font size for better visibility */
+  margin-bottom: 20px;
+}
+#controls {
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+}
