@@ -28,162 +28,87 @@
 </nav>
 
 <body>
-    <section>
-        <div class="container">
-            <h1>Full Body Workout</h1>
-            
-            <ul>
-              <li class="exercise">
-                <img src="https://gmb.io/wp-content/uploads/2017/10/Ryan-Push-Up.png" alt="Push-ups">
-                <h2>Push-ups</h2>
-                <p>3 sets of 10 reps</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="https://c8.alamy.com/comp/2D7P151/fit-muscular-young-man-doing-squat-exercises-isolated-on-white-background-2D7P151.jpg" alt="Squats">
-                <h2>Squats</h2>
-                <p>3 sets of 12 reps</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Plank</h2>
-                <p>3 sets, hold for 30 seconds each</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Lunges</h2>
-                <p>3 sets of 10 reps each leg</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Leg Raises</h2>
-                <p>3 sets of 15 reps</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Bicep Curls</h2>
-                <p>3 sets of 12 reps each arm</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Tricep Dips</h2>
-                <p>3 sets of 10 reps</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Pull-ups</h2>
-                <p>3 sets of 5 reps (if you have access to a pull-up bar)</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Jumping Jacks</h2>
-                <p>3 sets of 30 seconds</p>
-                <p>Rest: 30 seconds between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>High Knees</h2>
-                <p>3 sets of 30 seconds</p>
-                <p>Rest: 30 seconds between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Mountain Climbers</h2>
-                <p>3 sets of 30 seconds</p>
-                <p>Rest: 30 seconds between sets</p>
-              </li>
-              <li class="exercise">
-                <img src="" alt="">
-                <h2>Bodyweight Squats</h2>
-                <p>3 sets of 15 reps</p>
-                <p>Rest: 1 minute between sets</p>
-              </li>
-              <!-- Add more exercises here -->
-            </ul>
-          </div>
-          <title>Workout Timer</title>
-         
-          </head>
-          <body>
-          
-          <div id="timer">00:00</div>
-          
-          <div id="controls">
-            <button id="startBtn">Start</button>
-            <button id="stopBtn">Stop</button>
-          </div>
-          
-          <script>
-            // Workout Timer
-            const workoutDuration = 60; // Duration of the workout in seconds
-            const restDuration = 30; // Duration of the rest in seconds
-            const totalRounds = 10; // Total number of workout/rest rounds
-          
-            let currentRound = 1;
-            let timeLeft = workoutDuration;
-            let isWorkoutPhase = true;
-            let timerInterval;
-          
-            const timerDisplay = document.getElementById('timer');
-            const startBtn = document.getElementById('startBtn');
-            const stopBtn = document.getElementById('stopBtn');
-          
-            function updateDisplay() {
-              const minutes = Math.floor(timeLeft / 60);
-              let seconds = timeLeft % 60;
-              seconds = seconds < 10 ? '0' + seconds : seconds;
-              timerDisplay.textContent = `${minutes}:${seconds}`;
-            }
-          
-            function switchPhase() {
-              isWorkoutPhase = !isWorkoutPhase;
-              timeLeft = isWorkoutPhase ? workoutDuration : restDuration;
-              if (isWorkoutPhase) {
-                currentRound++;
-              }
-            }
-          
-            function timerTick() {
-              if (currentRound <= totalRounds) {
-                if (timeLeft > 0) {
-                  updateDisplay();
-                  timeLeft--;
-                } else {
-                  switchPhase();
-                }
-              } else {
-                clearInterval(timerInterval);
-                timerDisplay.textContent = 'Workout Complete!';
-              }
-            }
-          
-            startBtn.addEventListener('click', function() {
-              if (!timerInterval) {
-                timerInterval = setInterval(timerTick, 1000);
-              }
-            });
-          
-            stopBtn.addEventListener('click', function() {
-              clearInterval(timerInterval);
-              timerInterval = null;
-            });
-          
-          </script>
-          
-          </body>
-          </html>
-          
-
-
-
+  <section class="workout-container">
+    <!-- Workout 1 -->
+    <div class="workout-item">
+      <img src="https://th.bing.com/th/id/OIP.IY9dxl29nKd3XvYaoFAGuQAAAA?rs=1&pid=ImgDetMain" alt="workout-1">
+      <h3>push-ups</h3>
+      <p>workout</p>
         
+    </div>
+    <!-- Workout 2 -->
+    <div class="workout-item">
+      <img src="https://cbphysicaltherapy.com/wp-content/uploads/2015/03/Perfect-Squat-1280x1409.jpg" alt="Workout 2">
+      <h3>squats</h3>
+      <p>Some details about Workout 2...</p>
+    </div>
+    <!-- Add more workouts -->
+    <!-- Workout 3 -->
+    <div class="workout-item">
+      <img src="workout3.jpg" alt="Workout 3">
+      <h3>Workout 3</h3>
+      <p>Some details about Workout 3...</p>
+    </div>
+     <!-- Workout 4 -->
+     <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 4</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+     <!-- Workout 5 -->
+     <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 5</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+     <!-- Workout 6 -->
+     <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 6</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+     <!-- Workout 7 -->
+     <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 7</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+     <!-- Workout 8 -->
+     <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 8</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+    <!-- Workout 9 -->
+    <div class="workout-item">
+      <img src="workout4.jpg" alt="Workout 4">
+      <h3>Workout 9</h3>
+      <p>Some details about Workout 4...</p>
+    </div>
+    
+  
+    <!-- Add more workouts as needed -->
+  </section>
+    <section class="tips">
+      <h2>Workout Tips</h2>
+      <p>Here are some tips on how to do the workouts properly:</p>
+      <ul>
+        <li>Tip 1: Always warm up before starting your workouts.</li>
+        <li>Tip 2: Maintain proper form to avoid injuries.</li>
+        <!-- Add more tips as needed -->
+      </ul>
+    </section>
+    
+    <script>
+      // You can add JavaScript here for interactivity, such as animations or dynamic content loading.
+    </script>
+
+
+
+
+
+
+       
     </section>
 
    

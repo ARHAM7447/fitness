@@ -122,8 +122,8 @@ footer {
   background-color: #45a049;
 }
 .logo {
-  width: 20px; /* Adjust the width as needed */
-  margin-right: 20px;
+  width: 50px; /* Adjust the width as needed */
+  margin-right: 50px;
 }
 /* Styling for the powered by text */
 footer p {
@@ -170,7 +170,7 @@ header {
 }
 
 .logo {
-  width: 50px; /* Adjust as needed */
+  width: 100px; /* Adjust as needed */
 }
 
 nav {
@@ -214,7 +214,7 @@ main {
 
 #features li {
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 
 #testimonials ul {
@@ -311,222 +311,54 @@ footer a:hover {
 color: #c3d40e;
 }
 
-h1 {
-  text-align: center;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-.exercise {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-.exercise:hover {
-  background-color: #eaeaea;
-}
-/* Basic styling for the workout list */
-ul {
-  list-style-type: none;
-  padding: 0;
+/* Meditation Section styles */
+.meditation-section {
+padding: 40px 0;
 }
 
-li.exercise {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  background-color: #f9f9f9;
+.meditation-section .container {
+max-width: 800px;
+margin: 0 auto;
 }
 
-h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.meditation-section h2 {
+font-size: 28px;
+margin-bottom: 20px;
 }
 
-p {
-  font-size: 14px;
-  margin: 5px 0;
+.meditation-section p {
+margin-bottom: 15px;
+line-height: 1.5;
 }
 
-/* Animation for hover effect */
-li.exercise:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(5, 90, 188, 0.1);
+.meditation-section ul,
+.meditation-section ol {
+margin-bottom: 15px;
+padding-left: 20px;
 }
 
-/* Responsive color styles */
-@media screen and (max-width: 600px) {
-  li.exercise {
-    background-color: #12a3e7;
-  }
+.meditation-section li {
+margin-bottom: 5px;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  li.exercise {
-    background-color: #ea310c;
-  }
+.meditation-section img {
+display: block;
+max-width: 100%;
+height: auto;
+margin: 20px auto;
 }
 
-@media screen and (min-width: 1025px) {
-  li.exercise {
-    background-color: #f2f2f2;
-  }
-}
-/* Base styles for the workout list */
-ul {
-  list-style: none;
-  padding: 0;
+.meditation-section h3 {
+font-size: 24px;
+margin-bottom: 10px;
 }
 
-/* Styling for each exercise item */
-li.exercise {
-  background-color: #2c62eb; /* Light grey background */
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 8px;
-  transition: transform 0.2s ease-in-out; /* Smooth transform transition */
+.meditation-section ol {
+margin-bottom: 20px;
 }
-
-/* Adding a colorful border to the left of each exercise item */
-li.exercise::before {
-  content: '';
-  display: block;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(to bottom, #0ad9ef, #2160e9); /* Gradient color */
-  border-radius: 8px 0 0 8px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Styling for exercise titles */
-h2 {
-  color: #0e0101; /* Dark text color for better readability */
-  margin: 0 0 10px 0;
-}
-
-/* Styling for paragraphs (reps and rest info) */
-p {
-  color: #080101; /* Lighter text color */
-  margin: 0;
-}
-
-/* Hover effect for exercise items */
-li.exercise:hover {
-  transform: scale(1.05); /* Slightly enlarges the item */
-  background-color: #23cae4; /* Changes background color on hover */
-}
-
-/* Keyframes for a pulsing animation */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(230, 26, 11, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(225, 134, 6, 0.917);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 165, 0, 0);
-  }
-}
-
-/* Applying the animation to exercise items on hover */
-li.exercise:hover {
-  animation: pulse 1.5s infinite;
-}
-
-/* Additional exercises can be added here with similar styling */
-/* Timer and Control Buttons Styling */
-#timer {
-  font-size: 2em; /* Larger font size for better visibility */
-  color: #333; /* Dark grey color for the timer text */
-  text-align: center; /* Center the timer text */
-  margin: 20px 0; /* Spacing above and below the timer */
-  padding: 10px;
-  background-color: #e9e9e9; /* Light grey background for the timer */
-  border-radius: 5px; /* Rounded corners for the timer */
-  width: 150px; /* Fixed width for the timer */
-  margin-left: auto; /* Center the timer horizontally */
-  margin-right: auto;
-}
-
-/* Styling for the control buttons */
-#controls button {
-  background-color: #4CAF50; /* Green background for buttons */
-  color: white; /* White text color */
-  padding: 15px 32px; /* Padding inside the buttons */
-  text-align: center; /* Center the text inside the buttons */
-  text-decoration: none; /* Remove underline from the buttons */
-  display: inline-block; /* Allow buttons to sit side by side */
-  font-size: 16px; /* Set font size for button text */
-  margin: 4px 2px; /* Margin around the buttons */
-  cursor: pointer; /* Change mouse cursor to pointer when over the buttons */
-  border: none; /* Remove default border from buttons */
-  border-radius: 5px; /* Rounded corners for buttons */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-}
-
-/* Hover effect for buttons */
-#controls button:hover {
-  background-color: #45a049; /* Darker shade of green on hover */
-}
-
-/* Adding a shadow to the buttons for a 3D effect */
-#controls button {
-  box-shadow: 0 9px #999;
-}
-
-/* Change button styling when being clicked */
-#controls button:active {
-  background-color: #3b1bf1;
-  box-shadow: 0 5px #0ec8ee;
-  transform: translateY(4px);
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.exercise {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.exercise img {
-  width: 200px; /* Adjust the size as needed */
-  height: 200px; /* Adjust the size as needed */
-  margin-bottom: 10px;
-}
-
-.exercise h2 {
-  font-size: 20px;
-  margin: 0;
-}
-
-.exercise p {
-  margin: 5px 0;
-}
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 100px; /* Adjust margin-top to center vertically */
-}
-#timer {
-  font-size: 48px; /* Increase font size for better visibility */
-  margin-bottom: 20px;
-}
-#controls {
-  margin-top: 20px;
-}
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 0 10px;
-}
+body { font-family: Arial, sans-serif; }
+.workout-container { display: flex; flex-wrap: wrap; justify-content: space-around; }
+.workout-item { width: 30%; margin-bottom: 20px; }
+.workout-item img { width: 100%; height: auto; }
+.workout-item h3 { text-align: center; }
+.tips { background-color: #f4f4f4; padding: 10px; margin-top: 20px; }
