@@ -356,3 +356,56 @@ footer a:hover {
 .meditation-section ol {
   margin-bottom: 20px;
 }
+/* Meditation Section styles */
+.tation-section {
+  padding: 40px 0;
+  }
+  
+  .meditation-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  
+  .meditation-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  }
+  
+  .meditation-section p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  }
+  
+  .meditation-section ul,
+  .meditation-section ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  }
+  
+  .meditation-section li {
+  margin-bottom: 5px;
+  }
+  
+  .meditation-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  }
+  
+  .meditation-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  .meditation-section ol {
+  margin-bottom: 20px;
+  }
+  body { font-family: Arial, sans-serif; }
+  .workout-container { display: flex; flex-wrap: wrap; justify-content: space-around; }
+  .workout-item { width: 30%; margin-bottom: 20px; }
+  .workout-item img { width: 100%; height: auto; }
+  .workout-item h3 { text-align: center; }
+  .tips { background-color: #f4f4f4; padding: 10px; margin-top: 20px; }
+  
+  
