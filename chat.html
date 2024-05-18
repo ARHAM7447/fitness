@@ -3,42 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Full Body Workout</title>
-<style>
-  .workout-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .exercise {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
+<title>Fitness Chat</title>
+<link rel="stylesheet" href="chat.css">
 </head>
 <body>
 
-<h1>Full Body Workout</h1>
+<div class="chat-container">
+  <div id="chat-box"></div>
+  <input type="text" id="user-input" placeholder="Type your message...">
+  <button onclick="sendMessage()">Send</button>
+</div>
 
-<ul class="workout-container">
-  <!-- Each 'li' is a grid item and will be arranged into two columns -->
-  <li class="exercise">
-    <img src="push-up-image-url" alt="Push-ups">
-    <h2>Push-ups</h2>
-    <p>3 sets of 10 reps</p>
-    <p>Rest: 1 minute between sets</p>
-  </li>
-  <!-- Repeat for other exercises -->
-</ul>
-
+<script src="chat.js"></script>
 </body>
 </html>
