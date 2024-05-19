@@ -60,10 +60,10 @@ max-height: 200px;
 object-fit: cover;
 }
 
-/* Header */
+/* Header end */
 
 
- /* Styling for the powered by text */
+ /* start footer */
  footer p {
     margin-bottom: 10px; /* Add some space below the paragraph */
 }
@@ -86,77 +86,6 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-/* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  nav {
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  main {
-    padding: 20px 0;
-  }
-  
-  #hero {
-    text-align: center;
-  }
-  
-  #hero img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #features ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-  }
-  
-  #features li {
-    flex: 1;
-    text-align: center;
-  }
-  
-  #testimonials ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-  }
-  
-  #testimonials li {
-    flex: 1;
-    text-align: center;
-  }
-  
   footer {
     background-color: #333;
     color: #fff;
@@ -213,9 +142,9 @@ body {
 
 .signup-form {
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #aa0303;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #ee5316;
 }
 
 label {
@@ -246,11 +175,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #555;
-}
-/* Logo Styles */
-.logo {
-  width: 100px; /* Adjust the width as needed */
-  margin-right: 2000px; /* Adjust the margin as needed */
 }
 
 /* Reset default margin and padding */
@@ -302,3 +226,4 @@ footer a {
 footer a:hover {
   color: #c3d40e;
 }
+   /* end footer */

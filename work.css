@@ -1,4 +1,3 @@
-
 /* header*/
 
 body {
@@ -61,6 +60,7 @@ object-fit: cover;
 }
 
 
+/* Styling for the powered by text */
 footer p {
   margin-bottom: 10px; /* Add some space below the paragraph */
 }
@@ -83,43 +83,7 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
-/* Resetting default margin and padding */
 
-
-main {
-  padding: 20px 0;
-}
-
-#hero {
-  text-align: center;
-}
-
-#hero img {
-  max-width: 100%;
-  height: auto;
-}
-
-#features ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-#features li {
-  flex: 1;
-  text-align: center;
-}
-
-#testimonials ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-#testimonials li {
-  flex: 1;
-  text-align: center;
-}
 
 footer {
   background-color: #333;
@@ -153,8 +117,8 @@ footer p, footer h3 {
     display: block;
     margin-bottom: 10px;
   }
-}medi
-/* Reset default margin and padding */
+}
+/* footer section*/
 * {
 margin: 0;
 padding: 0;
@@ -204,174 +168,4 @@ footer a:hover {
 color: #c3d40e;
 }
 
-/* Meditation Section styles */
-.tation-section {
-padding: 40px 0;
-}
-
-.meditation-section .container {
-max-width: 800px;
-margin: 0 auto;
-}
-
-.meditation-section h2 {
-font-size: 28px;
-margin-bottom: 20px;
-}
-
-.meditation-section p {
-margin-bottom: 15px;
-line-height: 1.5;
-}
-
-.meditation-section ul,
-.meditation-section ol {
-margin-bottom: 15px;
-padding-left: 20px;
-}
-
-.meditation-section li {
-margin-bottom: 5px;
-}
-
-.meditation-section img {
-display: block;
-max-width: 100%;
-height: auto;
-margin: 20px auto;
-}
-
-.meditation-section h3 {
-font-size: 24px;
-margin-bottom: 10px;
-}
-
-.meditation-section ol {
-margin-bottom: 20px;
-}
-body { font-family: Arial, sans-serif; }
-.workout-container { display: flex; flex-wrap: wrap; justify-content: space-around; }
-.workout-item { width: 30%; margin-bottom: 20px; }
-.workout-item img { width: 100%; height: auto; }
-.workout-item h3 { text-align: center; }
-.tips { background-color: #f4f4f4; padding: 10px; margin-top: 20px; }
-
-/* for the text set */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Workout section */
-.workout-section {
-  background-color: #fff;
-  padding: 40px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.workout-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.workout-info {
-  margin-bottom: 20px;
-}
-
-.workout-info h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.workout-info p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.workout-info ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.workout-info li {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Tips section */
-.tips-section {
-  background-color: #f4f4f4;
-  padding: 40px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.tips-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.tips-info {
-  margin-bottom: 20px;
-}
-
-.tips-info p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.tips-info ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.tips-info li {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-}
-body {
-  font-family: Arial, sans-serif;
-}
-
-.push-up-instructions h2 {
-  margin-bottom: 10px;
-}
-
-.push-up-instructions ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.push-up-instructions ul li {
-  margin-bottom: 10px;
-}
-
-.push-up-instructions ul li::before {
-  content: "•";
-  margin-right: 5px;
-  color: #007bff; /* Change color as needed */
-}
+/* photos for the workout */
