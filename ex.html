@@ -1,28 +1,157 @@
-<ul>
-    <a href="home.html" class="header-btn">Home</a>
-    <a href="work.html" class="header-btn">workouts</a>
-    <a href="medi.html" class="header-btn">meditation</a>
-    <a href="sign.html" class="header-btn">sign-up</a>
-    <a href="login.html" class="header-btn">login</a>
-</ul>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Adjust the container layout */
+.workout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+/* Style each workout item */
+.workout-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  margin: 10px;
+  animation: fadeIn 1s ease-in-out; /* Add the fadeIn animation */
 }
 
-a {
-    text-decoration: thistle;
-    color: #333;
+/* Hover effect */
+.workout-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Style workout images */
+.workout-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eaeaea;
+  transition: transform 0.3s;
 }
+
+/* Hover effect for images */
+.workout-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Style workout titles */
+.workout-item h3 {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 15px 0 10px;
+}
+
+/* Style workout descriptions */
+.workout-item p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Zigzag layout */
+.workout-item:nth-child(odd) {
+  transform: translateY(-20px);
+}
+<section class="workout-container" id="workouts">
+    <!-- Workout 1 -->
+    <div class="workout-item">
+      <img src="https://th.bing.com/th/id/OIP.IY9dxl29nKd3XvYaoFAGuQAAAA?rs=1&pid=ImgDetMain" alt="Push-Ups">
+      <h3>Push-Ups</h3>
+      <section class="workout-info">
+        <h2>How to Do Push-Ups</h2>
+        <ul>
+          <li>Start in a plank position with your hands just wider than shoulder-width apart.</li>
+          <li>Extend your legs so they form a straight line with your back.</li>
+          <li>Lower yourself to the floor until your elbows are at 90 degrees.</li>
+          <li>Push yourself back up until your arms are straight.</li>
+          <li>Keep your core engaged, and maintain a straight line from head to heels throughout the movement.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Workout 2 -->
+    <div class="workout-item">
+      <img src="https://cbphysicaltherapy.com/wp-content/uploads/2015/03/Perfect-Squat-1280x1409.jpg" alt="Squats">
+      <h3>Squats</h3>
+      <section class="workout-info">
+        <h2>How to Do Squats</h2>
+        <ul>
+          <li>Stand with your feet shoulder-width apart or slightly wider, toes pointing slightly outward.</li>
+          <li>Keep your back straight, chest up, and gaze forward.</li>
+          <li>Engage your core muscles by pulling your belly button toward your spine.</li>
+          <li>Lower your body by bending your knees and pushing your hips back as if you're sitting back into a chair.</li>
+          <li>Lower yourself until your thighs are parallel to the ground or as far as your flexibility allows.</li>
+          <li>Keep your knees aligned with your toes, and make sure they don't extend beyond your toes.</li>
+          <li>Press through your heels to return to the starting position, straightening your legs and squeezing your glutes at the top.</li>
+          <li>Repeat for the desired number of repetitions.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Workout 3 -->
+    <div class="workout-item">
+      <img src="https://th.bing.com/th/id/R.83d616be47245e04b863033d0eb9cd10?rik=a0iPURGcitJHsw&riu=http%3a%2f%2fmojo.dailybruin.com%2fwp-content%2fuploads%2f2014%2f04%2fplank-20.jpg&ehk=tF66JYcuvlwEwN2tvvbaSDKZbgqT8iPwi7HNbT6a15M%3d&risl=1&pid=ImgRaw&r=0" alt="Plank">
+      <h3>Plank</h3>
+      <section class="workout-info">
+        <h2>How to Do the Plank</h2>
+        <ul>
+          <li>Start by getting into a push-up position with your hands directly under your shoulders.</li>
+          <li>Engage your core muscles and keep your body in a straight line from head to heels.</li>
+          <li>Hold this position, keeping your abs and glutes tight, and avoid sagging or arching your back.</li>
+          <li>Focus on breathing deeply and evenly throughout the exercise.</li>
+          <li>Hold the plank position for as long as you can, aiming for at least 30 seconds to start.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Workout 4 -->
+    <div class="workout-item">
+      <img src="https://th.bing.com/th/id/OIP.HJgSo2QuWpLnv1lnDZ0R7QHaGz?rs=1&pid=ImgDetMain" alt="Lunges">
+      <h3>Lunges</h3>
+      <section class="workout-info">
+        <h2>How to Do Lunges</h2>
+        <ul>
+          <li>Start by standing tall with your feet hip-width apart.</li>
+          <li>Take a big step forward with one leg and lower your body until both knees are bent at about a 90-degree angle.</li>
+          <li>Make sure your front knee is directly above your ankle and your back knee is hovering just above the ground.</li>
+          <li>Keep your torso upright, core engaged, and shoulders relaxed.</li>
+          <li>Push back up to the starting position by driving through your front heel.</li>
+          <li>Repeat on the other leg.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Workout 5 -->
+    <div class="workout-item">
+      <img src="https://th.bing.com/th/id/OIP.j24DQp3s9lv7mt4Qlq7l6gHaD3?rs=1&pid=ImgDetMain" alt="Glute Bridges">
+      <h3>Glute Bridges</h3>
+      <section class="workout-info">
+        <h2>How to Do Glute Bridges</h2>
+        <ul>
+          <li>Start by lying on your back with your knees bent and feet flat on the ground, hip-width apart.</li>
+          <li>Engage your core muscles by pulling your belly button toward your spine.</li>
+          <li>Press through your heels and lift your hips off the ground until your body forms a straight line from shoulders to knees.</li>
+          <li>Squeeze your glutes at the top of the movement and hold for a second or two.</li>
+          <li>Lower your hips back down to the starting position with control.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Workout 6 -->
+    <div class="workout-item">
+      <img src="https://inshape.blog/wp-content/uploads/2021/10/how-to-do-jumping-jacks-guide.jpg" alt="Jumping Jacks">
+      <h3>Jumping Jacks</h3>
+      <section class="workout-info">
+        <h2>How to Do Jumping Jacks</h2>
+        <ul>
+          <li>Start by standing with your feet together and your arms at your sides.</li>
+          <li>Jump up explosively while spreading your legs shoulder-width apart and simultaneously raising your arms above your head until your hands meet.</li>
+          <li>Land softly on the balls of your feet while bringing your legs back together and lowering your arms to your sides.</li>
+          <li>Repeat the movement continuously at a steady pace.</li>
+        </ul>
+      </section>write the css code for adjust the photos and information in the page adjust the workouts in the zigzag condition
