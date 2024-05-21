@@ -219,3 +219,38 @@ footer a:hover {
   color: #c3d40e;
 }
 
+/* faqs section */
+
+/* Ensure your HTML contains a footer element with the class 'footer' */
+.footer {
+  display: flex;
+  justify-content: flex-end; /* Aligns button to the right */
+  padding: 10px;
+  background-color: #333; /* Footer background color */
+  color: white; /* Text color */
+}
+
+/* Style for the button with class 'FOOTER-btn' */
+.FOOTER-btn {
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #6D5ACF 0%, #C748B9 100%); /* Gradient background */
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.FOOTER-btn:hover {
+  background: linear-gradient(45deg, #C748B9 0%, #6D5ACF 100%); /* Gradient hover effect */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  text-align: right;
+}
+
+  
+
+

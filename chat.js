@@ -22,14 +22,7 @@ function sendMessage() {
 function generateBotResponse(message) {
     // Define bot responses based on user input
     var responses = {
-        "hello": "Hello! How can I assist you today?",
-        "goodbye": "Goodbye! Have a great day!",
-        "thank you": "You're welcome!",
-        // Add more responses as needed
-        "workout plan": "A good workout plan includes a mix of cardio and strength training exercises. Here's a sample plan: 1) Warm up with 5-10 minutes of cardio, 2) Do 3 sets of 8-12 reps of compound exercises like squats, deadlifts, and bench press, 3) Finish with 10-15 minutes of cardio.",
-        "weight loss": "To lose weight, focus on exercises that burn a lot of calories such as running, swimming, and cycling. Strength training exercises like squats and deadlifts can also help by building muscle, which increases your metabolism.",
-        "flexibility": "To improve your flexibility, try doing dynamic stretches before your workout and static stretches after your workout. Yoga and Pilates are also great for improving flexibility.",
-        // Add more workout-related responses
+        
     };
 
     // Check if the message matches any predefined responses
