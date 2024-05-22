@@ -1,34 +1,113 @@
-/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background-color, #f4f4f9);
+  color: var(--text-color, #000);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .chat-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #chat-box {
-    height: 200px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
-  }
-  
-  #user-input {
-    width: calc(100% - 70px);
-    padding: 8px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  width: 400px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-container, .control-container {
+  display: flex;
+  padding: 8px;
+  background-color: #eee;
+}
+
+.input-container {
+  border-bottom: 1px solid #ccc;
+}
+
+#user-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+#send-button, #clear-button, #theme-toggle-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+#send-button:hover, #clear-button:hover, #theme-toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: #e1ffc7;
+  position: relative;
+}
+
+.message.user .message-content {
+  background-color: #c7e1ff;
+}
+
+.message.bot .message-content {
+  background-color: #e1ffc7;
+}
+
+.timestamp {
+  font-size: 0.75em;
+  color: #999;
+  position: absolute;
+  bottom: -16px;
+  right: 8px;
+}
+
+.typing-indicator {
+  display: none;
+  margin-bottom: 16px;
+  font-style: italic;
+  color: #999;
+}
+
+.theme-dark {
+  --background-color: #333;
+  --text-color: #fff;
+}
