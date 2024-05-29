@@ -64,6 +64,12 @@ function generateBotResponse(userInput) {
     "10": "Leg Raises: This exercise works your lower abs. Lie on your back with your arms at your sides. Lift your legs off the ground and raise them until they're at a 90-degree angle. Lower them back down, but don't let them touch the ground.",
     "11": "Jump Rope: This is a cardio exercise that gets your heart rate up. Simply jump over the rope as it passes under your feet.",
     "12": "Wall Sits: This exercise works your legs and glutes. Stand with your back against a wall and lower your body until your thighs are parallel to the ground. Hold the position.",
+    "13": "",
+    "14": "",
+    "15": "",
+    "16": "",
+    "17": "",
+    "18": "",
   };
 
   const response = responses[userInput.toLowerCase()] || "I'm sorry, I didn't understand that. How can I assist you?";
