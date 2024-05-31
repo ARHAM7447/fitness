@@ -111,3 +111,23 @@ body {
   --background-color: #333;
   --text-color: #fff;
 }
+/*bACK BUTTON */
+.back-button {
+  display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+}
+.back-button:hover {
+  background-color: #0056b3;
+}

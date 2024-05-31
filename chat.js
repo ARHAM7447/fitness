@@ -51,9 +51,7 @@ function displayMessage(message, sender) {
 
 function generateBotResponse(userInput) {
   const responses = {
-<<<<<<< HEAD
-    "hello": "hello buddy how can i help you.today if you have any query please enter the number for get the information."
-=======
+
     "hello": "Hello buddy",
     "1": " Push-ups: are a great exercise for your chest, arms, and shoulders. You do them by lying on your stomach and raising your body up and down using your arms. They also help strengthen your core muscles and improve your posture.",
     "2": " Squats: are a fantastic exercise for your legs, hips, and glutes. You do them by bending your knees and lowering your body down, then standing back up. They help make your legs stronger and more flexible, and can even improve your balance and athletic performance.",
@@ -67,13 +65,12 @@ function generateBotResponse(userInput) {
     "10": "Leg Raises: This exercise works your lower abs. Lie on your back with your arms at your sides. Lift your legs off the ground and raise them until they're at a 90-degree angle. Lower them back down, but don't let them touch the ground.",
     "11": "Jump Rope: This is a cardio exercise that gets your heart rate up. Simply jump over the rope as it passes under your feet.",
     "12": "Wall Sits: This exercise works your legs and glutes. Stand with your back against a wall and lower your body until your thighs are parallel to the ground. Hold the position.",
-    "13": "",
-    "14": "",
-    "15": "",
-    "16": "",
-    "17": "",
-    "18": "",
->>>>>>> fc3a13e2b181b3a138ee6773e1512cf2b2d9b94e
+    "13": "Mindfulness Meditation: involves paying attention to your thoughts, feelings, and sensations in a non-judgmental way. Practitioners focus on their breath and observe their thoughts and feelings without becoming attached to them.",
+    "14": "Focused Meditation: requires concentrating on a single point of focus, such as a sound, object, or breath. This helps develop concentration and clear the mind of distractions.",
+    "15": "Movement Meditation:includes any form of gentle, rhythmic activity that promotes a meditative state. This can include practices like yoga, tai chi, or walking, where the movement is done with awareness and mindfulness.",
+    "16": "Mantra Meditation:involves the repetition of a word, phrase, or sound (a mantra) to aid concentration and enter a meditative state. This practice can help deepen your focus and enhance your sense of spiritual connection.",
+    "17": "Transcendental Meditation is a specific form of mantra meditation where practitioners use a personalized mantra. It is usually practiced for 20 minutes twice a day, aiming to transcend ordinary thought and experience a state of restful alertness.",
+    "18": "Loving-Kindness Meditation (or Metta Meditation) focuses on developing feelings of compassion, kindness, and love towards oneself and others. Practitioners repeat phrases of goodwill, starting with themselves and gradually extending these feelings to others.",
   };
 
   const response = responses[userInput.toLowerCase()] || "I'm sorry, I didn't understand that. How can I assist you?";
@@ -111,3 +108,8 @@ function loadChat() {
 }
 
 window.onload = loadChat;
+
+        function goBack() {
+            window.history.back();
+        }
+  
