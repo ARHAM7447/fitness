@@ -1,0 +1,76 @@
+
+/* Header styles */
+.red-header {
+    background-color: #cf4a39;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 81, 0); /* Add the red line */
+}
+/* Footer styles */
+.red-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cf4a39;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    border-bottom: 3px solid rgb(255, 81, 0);
+}
+/* fitnesss wrkout */
+
+.workout-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 2000px;
+    margin: 70px 0;
+    padding: 40px;
+}
+
+.workout-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.workout-item:hover {
+    transform: translateY(-10px);
+}
+
+.workout-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.workout-item h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.workout-info {
+    padding: 15px;
+    text-align: center;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .workout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .workout-item h3 {
+        font-size: 1.2em;
+    }
+}
