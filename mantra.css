@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.red-header {
+    background-color: #e74c3c; /* Red background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding at the top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect at the bottom of the header */
+}
+
+.red-footer {
+    background-color: #e74c3c; /* Red background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding at the top and bottom */
+    position: relative; /* Positioned relative for static content */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect at the top of the footer */
+}
+
+.red-footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Font size */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: bold; /* Bold text */
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -4px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #e74c3c;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        padding: 10px;
+    }
+
+    .banner-image {
+        height: auto;
+    }
+
+    .content {
+        margin-top: 0;
+    }
+}
+/*bACK BUTTON */
+.back-button {
+    display: inline-block;
+              padding: 10px 20px;
+              font-size: 16px;
+              color: white;
+              background-color: #ff1900;
+              border: none;
+              border-radius: 5px;
+              text-align: center;
+              cursor: pointer;
+              text-decoration: none;
+              position: fixed;
+              top: 10px;
+              left: 10px;
+              z-index: 1000;
+  }
+  .back-button:hover {
+    background-color: #b32d00;
+  }
