@@ -22,11 +22,11 @@
           <img src="https://templates.mediamodifier.com/5e4822cc8072777b01f5e188/Fitness-And-Gym-Youtube-Banner-Template.jpg" alt="Website Banner" class="banner">
       </div>
       <ul>
-        <a href="home.html" class="header-btn">Home</a>
-        <a href="work.html" class="header-btn">Workouts</a>
-        <a href="medi.html" class="header-btn">Meditation</a>
-        <a href="sign.html" class="header-btn">Sign-Up</a>
-        <a href="login.html" class="header-btn">Login</a>
+        <a href="home.php" class="header-btn">Home</a>
+        <a href="work.php" class="header-btn">Workouts</a>
+        <a href="medi.php" class="header-btn">Meditation</a>
+        <a href="sign.php" class="header-btn">Sign-Up</a>
+        <a href="login.php" class="header-btn">Login</a>
       </ul>
     </nav>
     </div>
@@ -39,7 +39,7 @@
             <img src="https://th.bing.com/th/id/OIP.IY9dxl29nKd3XvYaoFAGuQAAAA?rs=1&pid=ImgDetMain" alt="Push-Ups">
             <h3>1.Push-Ups</h3>
             <div>
-              <a href="pushups.html" class="FOOTER-btn">pushups</a>
+              <a href="pushups.php" class="FOOTER-btn">pushups</a>
             </div>
             <section class="workout-info">
             </section>
@@ -49,7 +49,7 @@
             <img src="https://cbphysicaltherapy.com/wp-content/uploads/2015/03/Perfect-Squat-1280x1409.jpg" alt="Squats">
             <h3>2.Squats</h3>
             <div>
-              <a href="squats.html" class="FOOTER-btn">squats</a>
+              <a href="squats.php" class="FOOTER-btn">squats</a>
             </div>
             <section class="workout-info">
             </section>
@@ -60,7 +60,7 @@
             <h3>3.Plank</h3>
             <section class="workout-info">
             </section>
-            <a href="plank.html" class="FOOTER-btn">Plank</a>
+            <a href="plank.php" class="FOOTER-btn">Plank</a>
           </div>
           <!-- Workout 4 -->
           <div class="workout-item">
@@ -68,14 +68,14 @@
             <h3>4.Lunges</h3>
             <section class="workout-info">
             </section>
-            <a href="lunges.html" class="FOOTER-btn">Lunges</a>
+            <a href="lunges.php" class="FOOTER-btn">Lunges</a>
           </div>
           <!-- Workout 5 -->
           <div class="workout-item">
             <img src="https://th.bing.com/th/id/OIP.j24DQp3s9lv7mt4Qlq7l6gHaD3?rs=1&pid=ImgDetMain" alt="Glute Bridges">
             <h3>5.Glute Bridges</h3>
             <section class="workout-info">
-              <a href="gultbridges.html" class="FOOTER-btn">gultbridges</a>
+              <a href="gultbridges.php" class="FOOTER-btn">gultbridges</a>
             </section>
           </div>
           <!-- Workout 6 -->
@@ -83,7 +83,7 @@
             <img src="https://inshape.blog/wp-content/uploads/2021/10/how-to-do-jumping-jacks-guide.jpg" alt="Jumping Jacks">
             <h3>6.Jumping Jacks</h3>
             <section class="workout-info">
-              <a href="jumping.html" class="FOOTER-btn">jumping Jacks</a>
+              <a href="jumping.php" class="FOOTER-btn">jumping Jacks</a>
             </section>
           </div>
             <!-- Workout 7 -->
@@ -91,7 +91,7 @@
             <img src="https://media1.popsugar-assets.com/files/thumbor/AJchafbgbaW-DtHbhavAT4DDOmc/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2018/01/04/199/n/41245764/687e54c3ccb4ce6c_Bicycle-Crunches/i/Bicycle-Crunches.jpg" alt="Bicycle-Crunches">
             <h3>7.Bicycle-Crunches</h3>
             <section class="workout-info">
-              <a href="bycycle.html" class="FOOTER-btn">bycycle</a>
+              <a href="bycycle.php" class="FOOTER-btn">bycycle</a>
             </section>
           </div>
           <!-- Workout 8 -->
@@ -99,7 +99,7 @@
            <img src="https://th.bing.com/th/id/OIP.uII8AmPzIvnM_ciGiGblOwAAAA?rs=1&pid=ImgDetMain" alt="Mountain Climbers">
            <h3>8.Mountain Climbers</h3>
            <section class="workout-info">
-            <a href="mountain.html" class="FOOTER-btn">Mountain Climbers</a>
+            <a href="mountain.php" class="FOOTER-btn">Mountain Climbers</a>
            </section>
           </div>
           <!-- Workout 9 -->
@@ -107,18 +107,44 @@
            <img src="https://www.inmotionlife.com/wp-content/uploads/Leg-Raises.jpg" alt="Leg-Raises">
            <h3>9.Leg-Raises</h3>
            <section class="workout-info">
-            <a href="leg.html" class="FOOTER-btn">leg-raises</a>
+            <a href="leg.php" class="FOOTER-btn">leg-raises</a>
            </section>
           </div>
       </section>
     </body>
+    <section>
+
+    <div class="container">
+        <h2>Workout Tracker</h2>
+        <form action="tracker.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="exercise_name">Exercise Name:</label>
+                <input type="text" id="exercise_name" name="exercise" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <input type="submit" value="Save Workout">
+    </section>
 </main>
 <footer>
   <div class="container">
     <footer>
      
       <div>
-        <a href="chat.html" class="FOOTER-btn">FAQ'S</a>
+        <a href="chat.php" class="FOOTER-btn">FAQ'S</a>
       </div>
           <div>
               <h1>products</h1>

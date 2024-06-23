@@ -21,11 +21,11 @@
       </div>
     
       <ul>
-        <a href="home.html" class="header-btn">Home</a>
-        <a href="work.html" class="header-btn">Workouts</a>
-        <a href="medi.html" class="header-btn">Meditation</a>
-        <a href="sign.html" class="header-btn">Sign-Up</a>
-        <a href="login.html" class="header-btn">Login</a>
+        <a href="home.php" class="header-btn">Home</a>
+        <a href="work.php" class="header-btn">Workouts</a>
+        <a href="medi.php" class="header-btn">Meditation</a>
+        <a href="sign.php" class="header-btn">Sign-Up</a>
+        <a href="login.php" class="header-btn">Login</a>
       </ul>
     </nav>
     
@@ -82,7 +82,7 @@
     <footer>
      
       <div>
-        <a href="chat.html" class="FOOTER-btn">FAQ'S</a>
+        <a href="chat.php" class="FOOTER-btn">FAQ'S</a>
       </div>
           <div>
               <h1>products</h1>

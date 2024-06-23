@@ -270,6 +270,46 @@ color: #c3d40e;
   text-align: right;
 }
 
-  
+ /* workout section*/ 
 
 
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}

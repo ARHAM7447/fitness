@@ -23,11 +23,11 @@
       </div>
     
       <ul>
-        <a href="home.html" class="header-btn">Home</a>
-        <a href="work.html" class="header-btn">Workouts</a>
-        <a href="medi.html" class="header-btn">Meditation</a>
-        <a href="sign.html" class="header-btn">Sign-Up</a>
-        <a href="login.html" class="header-btn">Login</a>
+        <a href="home.php" class="header-btn">Home</a>
+        <a href="work.php" class="header-btn">Workouts</a>
+        <a href="medi.php" class="header-btn">Meditation</a>
+        <a href="sign.php" class="header-btn">Sign-Up</a>
+        <a href="login.php" class="header-btn">Login</a>
       </ul>
     </nav>
     
@@ -43,7 +43,7 @@
           <img src="https://static.businessinsider.com/image/589235dbdd0895fb718b470c/image.jpg" alt="Mindfulness Meditation">
           <h3>Mindfulness Meditation</h3>
           <section class="workout-info">
-            <a href="mind.html" class="FOOTER-btn">Mindfulness</a>
+            <a href="mind.php" class="FOOTER-btn">Mindfulness</a>
           </section>
         </div>
         <!-- Meditation 2 -->
@@ -51,7 +51,7 @@
           <img src="https://www.calmsage.com/wp-content/uploads/2021/04/Focused-Attention-Meditation.jpg"alt="Focused Meditation">
           <h3>Focused Meditation</h3>
           <section class="workout-info">
-            <a href="focus.html" class="FOOTER-btn">Focused</a>
+            <a href="focus.php" class="FOOTER-btn">Focused</a>
           </section>
         </div>
         <!-- Meditation 3 -->
@@ -59,7 +59,7 @@
           <img src="https://mychakrahealing.com/wp-content/uploads/2021/11/3946991-768x768.jpg" alt="Mantra Meditation">
           <h3>Mantra Meditation</h3>
           <section class="workout-info">
-            <a href="mantra.html" class="FOOTER-btn">mantra</a>
+            <a href="mantra.php" class="FOOTER-btn">mantra</a>
           </section>
         </div>
         <!-- Meditation 4 -->
@@ -67,7 +67,7 @@
           <img src="https://i.ytimg.com/vi/Lg10jpzAzok/maxresdefault.jpg" alt="Loving-Kindness Meditation">
           <h3>Loving-Kindness Meditation</h3>
           <section class="workout-info">
-            <a href="love.html" class="FOOTER-btn">Loving-Kindness</a>
+            <a href="love.php" class="FOOTER-btn">Loving-Kindness</a>
           </section>
         </div>
       </section>
@@ -82,7 +82,7 @@
     <footer>
      
       <div>
-        <a href="chat.html" class="FOOTER-btn">FAQ'S</a>
+        <a href="chat.php" class="FOOTER-btn">FAQ'S</a>
       </div>
             <div>
                 <h1>products</h1>

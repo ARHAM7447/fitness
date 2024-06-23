@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="sign.css">
 </head>
 <body>
+
 </head>
 <body>
 </head>
@@ -21,41 +22,43 @@
          <div class="banner-container">
           <img src="https://templates.mediamodifier.com/5e4822cc8072777b01f5e188/Fitness-And-Gym-Youtube-Banner-Template.jpg" alt="Website Banner" class="banner">
       </div>
-    
       <ul>
-        <a href="home.html" class="header-btn">Home</a>
-        <a href="work.html" class="header-btn">Workouts</a>
-        <a href="medi.html" class="header-btn">Meditation</a>
-        <a href="sign.html" class="header-btn">Sign-Up</a>
-        <a href="login.html" class="header-btn">Login</a>
+        <a href="home.php" class="header-btn">Home</a>
+        <a href="work.php" class="header-btn">Workouts</a>
+        <a href="medi.php" class="header-btn">Meditation</a>
+        <a href="sign.php" class="header-btn">Sign-Up</a>
+        <a href="login.php" class="header-btn">Login</a>
       </ul>
     </nav>
     
     </div>
   </header>
 
-
 <main>
     <div class="container">
         <section id="hero">
-           
+            
             
         </section>
-       
-</head>
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form class="login-form" action="#" method="post">
-          <label for="username" class="login-label">Username:</label><br>
-          <input type="text" id="username" name="username" class="login-input" required><br>
-          <label for="password" class="login-label">Password:</label><br>
-          <input type="password" id="password" name="password" class="login-input" required><br>
-          <input type="submit" value="Login" class="login-submit">
-        </form>
-      </div>
-</body>
-</html>
+<div class="container">
+    <h2>Sign Up</h2>
+    <form class="signup-form" action="sign2.php" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+
+      
+      <label for="phone number">phone number:</label><br>
+      <input type="phone number" id="phone number" name="number" required><br>
+      
+      <input type="submit" value="Sign Up" name="signup">
+    </form>
+  </div>
         
         </section>
     </div>
@@ -63,9 +66,8 @@
 
 <footer>
     <footer>
-     
         <div>
-            <a href="chat.html" class="FOOTER-btn">FAQ'S</a>
+            <a href="chat.php" class="FOOTER-btn">FAQ'S</a>
           </div>
             <div>
                 <h1>products</h1>
